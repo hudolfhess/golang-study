@@ -3,6 +3,8 @@ version: "3"
 services:
   web:
     image: golang:1.12rc1-alpine
+    ports:
+      - "8080:8080"
     volumes:
       - .:/go/src/golang-study
     working_dir: /go/src/golang-study
