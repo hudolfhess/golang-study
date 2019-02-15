@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/hudolfhess/golang-study/cmd/server"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -11,6 +13,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	mux := server.Routes()
+
+	log.Fatal(http.ListenAndServe(":8080", mux))
 }

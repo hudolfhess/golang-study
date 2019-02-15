@@ -6,6 +6,6 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - .:/go/src/golang-study
-    working_dir: /go/src/golang-study
+      - .:/go/src/github.com/hudolfhess/golang-study
+    working_dir: /go/src/github.com/hudolfhess/golang-study
     command: go run main.go
