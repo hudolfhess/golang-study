@@ -4,7 +4,7 @@ This project purpose is to study Golang: how it works and its features. Also I w
 ## Goals
 - [ ] Create a simple web application
   - [x] Creating simple routes
-  - [ ] Creating middlewares
+  - [x] Creating middlewares
 - [ ] Use Clean Architecture
 - [ ] Write tests
   - [ ] Compare standart library test with others libraries to write tests
