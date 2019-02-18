@@ -1,8 +1,13 @@
 package handlers
 
-import "net/http"
+import (
+	"net/http"
+
+	"github.com/hudolfhess/golang-study/cmd/server/application"
+)
 
 type IndexHandler struct {
+	Config application.Config
 }
 
 func (h *IndexHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {

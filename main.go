@@ -8,7 +8,8 @@ import (
 )
 
 func main() {
-	mux := server.Routes()
+	config := server.LoadConfig()
+	mux := server.Routes(config)
 
 	log.Println("Starting server: http://localhost:8080/")
 	log.Fatal(http.ListenAndServe(":8080", mux))
